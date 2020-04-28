@@ -157,6 +157,7 @@ input[type="submit"]:hover, button[type="submit"]:hover{
     position: fixed;
     top: 0;
     height: 50px;
+    overflow: hidden;
 }
 .mobile .nav-menu .menu-button {
     background: #0e253d;
@@ -275,7 +276,7 @@ section#who-we-are{
 }
 /* --------------------------------------------------------------feature image secondary */
 .feature-secondary{
-    height: 60vh;
+    height: auto;
     margin-top: 5vh;
 }
 /* --------------------------------------------------------------our services section */
@@ -286,6 +287,7 @@ section#who-we-are{
     grid-auto-flow: column;
     overflow-x: scroll;
     -ms-overflow-style: none;
+    scrollbar-width: none
 }
 .service-scroller:after {
   content: '';
@@ -321,7 +323,7 @@ footer .menu-icons ul{
     background: #e6e6e6;
 }
 footer a{
-    color: black;
+    color: black!important;
 }
 
 .modal-content{
@@ -390,6 +392,7 @@ footer a{
     }
     .feature-secondary{
         background: url('../assets/images/the-two-homers-house-plan.jpg') no-repeat center center;
+        height: 60vh;
         background-size: cover;
     }
     /* services section */
@@ -452,4 +455,22 @@ footer a{
         width: 100%;
     }
     
+ }
+
+
+ /* --------------------------------------------------------------Internet Explorer */
+ @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    i{
+        overflow: hidden;
+    }
+    .col-12{
+        overflow: hidden;
+    }
+    .service-scroller div.service{
+        width: 23%;
+        display: inline-block;
+        margin: 0!important;
+        vertical-align: top;
+    }
+
  }

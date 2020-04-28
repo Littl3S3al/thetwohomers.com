@@ -1,10 +1,11 @@
 /* colour reference
 
 navy blue: 0e253d
-navy bllue focus: 1c4163
+navy bllue focus: 17456b
 green: 587165
 red: 841621
 gold: cea075
+gold focus: e89856
 silver: c0c0ba
 light grey: e6e6e6
 dark grey: 333333 
@@ -48,8 +49,11 @@ h1{
     font-size: 4em;
     background: white;
     z-index: 1;
-    overflow: hidden;
-    padding: 1px;
+    overflow: visible;
+    min-height: 1.5em;
+}
+h1.no-bg{
+    background: rgba(0, 0, 0, 0);
 }
 h3{
     font-weight: 700;
@@ -75,6 +79,20 @@ button.btn-dark{
     font-weight: 400;
     font-size: 1em;
 }
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active{
+    background: #17456b;
+}
+.btn-warning{
+    border-radius: 0;
+    background: #cea075;
+    font-weight: 400;
+    font-size: 1em;
+    border:#cea075; 
+}
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active{
+    background: #e89856;
+    border: #e89856;
+}
 section{
     margin: 25px 0;
 }
@@ -83,7 +101,7 @@ section{
     width: 90%;
     height: 1px;
     position: absolute;
-    transform: translateY(-3.4em);
+    transform: translateY(-4.4em);
     z-index: -10;
 }
 .navy{
@@ -92,6 +110,42 @@ section{
 cite{
     font-size: 0.8em;
     font-weight: 300;
+}
+/* forms */
+label{
+    display: block;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+    color: #666;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 6px 12px;
+}
+input[type="submit"], button[type="submit"]{
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border-radius: 0;
+    box-shadow: none;
+    border: #cea075;
+    background: #cea075;
+}
+input[type="submit"]:hover, button[type="submit"]:hover{
+    outline: none;
+    border: #e89856;
+    background: #e89856;
 }
 /* --------------------------------------------------------------header styles */
 
@@ -137,6 +191,9 @@ cite{
 .menu-icons a{
     color: white;
     cursor: pointer;
+}
+.menu-icons a:hover{
+    color: #cea075;
 }
 .logo{
     margin-top: 15vh;
@@ -213,7 +270,7 @@ section#who-we-are{
 }
 /* --------------------------------------------------------------about us section */
 #aboutImage{
-    background: url('../assets/images/teapot.jpg') no-repeat center center;
+    background: url('../assets/images/pot-plant.jpg') no-repeat center center;
     background-size: cover;
 }
 /* --------------------------------------------------------------feature image secondary */
@@ -223,24 +280,53 @@ section#who-we-are{
 }
 /* --------------------------------------------------------------our services section */
 .service-scroller{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: minmax(150px, 1fr);
+    grid-auto-flow: column;
     overflow-x: scroll;
-    white-space: nowrap;
+    -ms-overflow-style: none;
+}
+.service-scroller:after {
+  content: '';
+  width: 10px;
+}
+.service-scroller::-webkit-scrollbar {
+    display: none;
+}
+.service-scroller:last-child {
+    margin-right: 20px;
 }
 .service-scroller div.service{
     width: 70vw;
     background: #e6e6e6;
-    display: inline-block;
 }
 .service-description{
     padding: 10px;
 }
+/* --------------------------------------------------------------instagram section */
+section#instagram .container .row{
+    background: #e6e6e6;
+}
+/* --------------------------------------------------------------sign up section */
+section#sign-up{
+    background: url('../assets/images/table-eucalyptus-leaves.jpg') no-repeat center center;
+    background-size: cover;
+}
+/* --------------------------------------------------------------footer */
+footer .menu-icons ul{
+    float: none;
+}
+.footer-bottom{
+    background: #e6e6e6;
+}
+footer a{
+    color: black;
+}
 
-
-
-
-
-
-
+.modal-content{
+    border-radius: 0!important;
+}
 
 
 
@@ -253,14 +339,14 @@ section#who-we-are{
 /* // Extra small devices (portrait phones, less than 576px) */
 /* // No media query for `xs` since this is the default in Bootstrap */
 
-/* // Small devices (landscape phones, 576px and up) */
+/* // --------------------------------------------------------------Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
     .brand-image-mobile{
         padding: 30px;
     }
  }
 
-/* // Medium devices (tablets, 768px and up) */
+/* // --------------------------------------------------------------Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
      /* general styles */
@@ -306,9 +392,14 @@ section#who-we-are{
         background: url('../assets/images/the-two-homers-house-plan.jpg') no-repeat center center;
         background-size: cover;
     }
+    /* services section */
+    .service-scroller div.service{
+        width: 40vw;
+        background: white;
+    }
  }
 
-/* // Large devices (desktops, 992px and up) */
+/* // --------------------------------------------------------------Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
     /* general styles */
     .hide-until-pro{
@@ -316,7 +407,7 @@ section#who-we-are{
     }
  }
 
-/* // Extra large devices (large desktops, 1200px and up) */
+/* // --------------------------------------------------------------Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
     /* home page styles */
     .logo img{
@@ -326,7 +417,7 @@ section#who-we-are{
         height: 60vh;
     }
  }
-
+/* --------------------------------------------------------------Extra large devices landscape */
  @media (min-width: 1200px) and (orientation: landscape) { 
      /* general styles */
      .hide-until-desktop{
@@ -342,6 +433,23 @@ section#who-we-are{
     }
     section#quote{
         font-size: 2em;
+    }
+    /* services section */
+    .service-scroller{
+        grid-gap: 10px;
+        grid-template-rows: auto;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-auto-flow: row;
+        overflow-x: hidden;
+    }
+    .service-scroller:after {
+        width: 0px;
+    }
+    .service-scroller:last-child {
+        margin-right: 0;
+    }
+    .service-scroller div.service{
+        width: 100%;
     }
     
  }

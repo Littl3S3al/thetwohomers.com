@@ -37,7 +37,7 @@
     
 
     <!-- header on mobile -->
-    <header class="mobile hide-tablet-up animated fadeInDown">
+    <header class="mobile hide-tablet-up">
         <div class="nav-menu">
             <div class="menu-button">
                 <div class="menu-button-text">
@@ -123,6 +123,10 @@
             </nav>
         </div><!--container-->
     </header>
+
+    <!-- hidden nav for desktop and tablet -->
+    <nav class="row hiddenNav hide-mobible">    
+    </nav>
 
 
     <!-- feature image -->
@@ -389,13 +393,11 @@
     <!--animate on scroll-->
     <script src='https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js'></script>
 
-    <!--aos init-->
-    <script  src="scripts/script.js"></script>
-
     <!-- custom scripts -->
     <script src="scripts/navbar.js"></script>
     <script src="scripts/modal.js"></script>
     <script src="scripts/letter-t.js"></script>
     <script src="scripts/aos.js"></script>
+    <script src="scripts/hiddenNav.js"></script>
 </body>
 </html>

@@ -22,9 +22,12 @@ dark grey: 333333
     font-style: normal;
 
 }
-*, html{
+html{
     max-width: 100vw;
     overflow-x: hidden;
+    margin: 0;
+    padding:0;
+    scroll-behavior: smooth;
 }
 body{
     margin:0;
@@ -34,6 +37,7 @@ body{
     font-size: 1em;
     box-sizing: border-box;
 }
+
 .hide-mobile{
     display: none;
 }
@@ -164,8 +168,8 @@ input[type="submit"]:hover, button[type="submit"]:hover{
     border: #e89856;
     background: #e89856;
 }
-.container, .row, section{
-    overflow: visible;
+.sticky-top{
+    top: 40px;
 }
 /* --------------------------------------------------------------header styles */
 
@@ -174,8 +178,8 @@ input[type="submit"]:hover, button[type="submit"]:hover{
     font-size: 20px;
 }
 .mobile .nav-menu .menu-icons, .mobile .nav-menu .menu-button {
-    position: fixed;
-    top: 0;
+    position: fixed!important;
+    top: 0!important;
     height: 50px;
     overflow: hidden;
 }
@@ -228,7 +232,7 @@ input[type="submit"]:hover, button[type="submit"]:hover{
     top: 0;
     left: 0;
     z-index: 10;
-    font-family: merriweather, serif;
+    font-family: josefin-sans, sans-serif;
     font-weight: 400;
     transition: height 0.5s;
 }
@@ -352,11 +356,93 @@ footer a{
 .modal-content{
     border-radius: 0!important;
 }
-
-
-
-
-
+/* --------------------------------------------------------------packages and services styles */
+.text-box{
+    background: white;
+}
+section#services .text-box{
+    padding: 4em 3em!important;
+}
+section#packages{
+    background: url('../assets/images/eucalyptus-plant.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section#services{
+    background: url('../assets/images/ocean.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.sideNav li {
+    display: inline-block;
+    background: white;
+    border-radius: 20px;
+    padding: 5px 10px;;
+    margin: 5px 1px;
+}
+.sideNav li span{
+    display: none;
+}
+.sideNav li a{
+    color: #0e253d;
+    font-weight: 400;
+    font-family: merriweather, serif;
+}
+div.number{
+    background: #c0c0ba;
+    width: 80px;
+    height: 80px;
+    padding-top: 0.2em;
+    border-radius: 40px;
+    font-size: 2.5em;
+    font-family: merriweather, serif;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 30px;
+}
+.body-content h2{
+    font-family: merriweather, serif;
+    color: #0e253d;
+    font-weight: 700;
+}
+section#services .body-content h2{
+    margin-bottom: 2em;
+}
+.body-content span{
+    font-family: merriweather, serif;
+    color: #0e253d;
+    font-weight: 400;
+    font-size: 1em;
+}
+.infographic{
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-rows: 60px auto;
+    grid-template-columns: 60px  2px 60px 2px 60px;
+}
+.icon{
+    background: #0e253d;
+    border-radius: 30px;
+    padding-top: 0.9em;
+}
+.infographic i{
+    font-size: 2em;
+    color: white;
+}
+.text-box li{
+    padding-top: 10px;
+}
+.download{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background: #0e253d;
+    padding-top: 10px;
+}
+.download a{
+    color: white;
+    font-size: 40px;
+}
 
 
 /* --------------------------------------------------------------media queries */
@@ -381,7 +467,7 @@ footer a{
     .hide-mobile{
         display: block;
     }
-
+    
     /* header */
     .menu-icons a{
         color: black;
@@ -405,6 +491,15 @@ footer a{
     nav.row li a.active{
         border-bottom: 1px solid black;
     }
+    nav.row.hiddenNav{
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        margin: 0;
+        z-index: 2000;
+        opacity: 0;
+        transition: opacity 0.8s;    
+    }
 
     /* feature image home */
     .feature{
@@ -423,6 +518,15 @@ footer a{
         width: 40vw;
         background: white;
     }
+
+    /* packages and services */
+    .text-box{
+        padding-left: 4em!important;
+        padding-right: 4em!important;
+    }
+    section#services .text-box{
+        padding: 4em 7em!important;
+    }
  }
 
 /* // --------------------------------------------------------------Large devices (desktops, 992px and up) */
@@ -430,6 +534,40 @@ footer a{
     /* general styles */
     .hide-until-pro{
         display:block;
+    }
+    /* packages and services */
+    .sideNav{
+        background: white;
+        padding: 50px 30px;
+    }
+    .sideNav li {
+        display: block;
+        background: none;
+        border-radius: none;
+        padding: 10px 0;
+        margin: 0;
+    }
+    .sideNav li span{
+        display: block;
+        font-weight: 700;
+    }
+    .sideNav li span hr{
+        margin: 5px 0;
+        border: 0.5px solid black!important;
+    }
+    section#services .sideNav li span hr{
+        margin: 1px 0;
+    }
+    .sideNav li a{
+        color: #0e253d;
+        font-weight: 400;
+    }
+    section#services .sideNav li a{
+        font-weight: 700;
+    }
+    .sideNav li a:hover{
+        color: #cea075;
+        text-decoration: none;
     }
  }
 
@@ -477,7 +615,12 @@ footer a{
     .service-scroller div.service{
         width: 100%;
     }
-    
+
+    /* packages and services */
+    .text-box{
+        padding-left: 6em!important;
+        padding-right: 6em!important;
+    }
  }
 
 
@@ -501,6 +644,25 @@ footer a{
         -o-transform: translateX(0.2em); 
         -webkit-transform: translateX(0.2em);
         transform: translateX(0.2em);
+    }
+
+    /* packages and services */
+    .infographic{
+        width: 250px;
+    }
+    .infographic .icon{
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+    }
+    .infographic .navy{
+        display: none;
+    }
+    .infographic .text{
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        margin-top: 10px;
     }
 
  }

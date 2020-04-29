@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/images/the-two-homers-favicon.svg">
+    <title>The Two Homers: About</title>
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- link to fonts: Josefin and Merriweather -->
+    <link rel="stylesheet" href="https://use.typekit.net/ssi4xjj.css">
+
+    <!-- fontawesome icons -->
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+
+    <!-- link to custom css -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+   <!--animate on scroll-->
+   <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"/>
+
+
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+    
+
+    <!-- header on mobile -->
+    <header class="mobile hide-tablet-up">
+        <div class="nav-menu">
+            <div class="menu-button">
+                <div class="menu-button-text">
+                    <i class="fas fa-bars"></i>
+                    MENU
+                </div>
+            </div>
+            <div class="menu-icons">
+                <ul>
+                    <li><a href="https://www.facebook.com/thetwohomers" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/the_two_homers/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/the-two-homers" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://za.pinterest.com/thetwohomers/" target="blank"><i class="fab fa-pinterest-p"></i></a></li>
+                    <li>|</li>
+                    <li><a href="mailto:jess@thetwohomers.com" target="_blank"><i class="far fa-envelope"></i></a></li>
+                    <li><a href="tel:+61414562424"><i class="fas fa-phone"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container logo">
+            <div class="row">
+                <div class="col-10 offset-1 text-center">
+                    <img src="assets/images/the-two-homers-logo.svg" alt="The Two Homers">
+                </div>
+            </div>
+        </div>
+
+        <nav class="mobile-nav d-none">
+            <div class="menu-container">
+                <ul>
+                    <li><a href="/">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="packages.html" class="active">packages</a></li>
+                    <li><a href="services.html">services</a></li>
+                    <li><a href="contact-us.html">contact</a></li>
+                </ul>
+            </div>
+            <button class="btn btn-lg btn-dark" data-toggle="modal" data-target="#myModal">subscribe to our newsletter</button>
+            <div class="remainder-menu"></div>
+        </nav>
+   
+    </header>
+
+
+    <!-- header on tablet up -->
+    <header class="tablet hide-mobile animated fadeInDown">
+        <div class="container">
+            <div class="row">
+                <div class="col-11">
+                    <div class="menu-icons">
+                        <ul>
+                            <li><a href="https://www.facebook.com/thetwohomers" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.instagram.com/the_two_homers/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/the-two-homers" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="https://za.pinterest.com/thetwohomers/" target="blank"><i class="fab fa-pinterest-p"></i></a></li>
+                            <li>|</li>
+                            <li><a href="mailto:jess@thetwohomers.com" target="_blank"><i class="far fa-envelope"></i></a></li>
+                            <li><a href="tel:+61414562424"><i class="fas fa-phone"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!--row-->
+        </div>
+
+        <div class="container-fluid">
+            <div class="row logo">
+                <div class="col-6 offset-3 col-xl-4 offset-xl-4 text-center">
+                    <img src="assets/images/the-two-homers-logo.svg" alt="The Two Homers">
+                </div>
+            </div><!--row-->
+
+            <nav class="row">
+                <div class="col-12 text-center m-0 p-0">
+                    <ul class="list-inline m-0 p-0">
+                        <li><a href="/">home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="packages.html" class="active">packages</a></li>
+                        <li><a href="services.html">services</a></li>
+                        <li><a href="contact-us.html">contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div><!--container-->
+    </header>
+
+    <!-- hidden nav for desktop and tablet -->
+    <nav class="row hiddenNav hide-mobible">    
+    </nav>
+
+    <section id="packages" class="fixed-bg animated fadeInUp">
+        <div class="container">
+            <div class="row py-3">
+
+                <!-- side nav -->
+                <div class="py-3 col-12 col-lg-3 order-lg-2"> 
+                    <div class="sideNav my-4 sticky-top">
+                        <ul class="list-inline">
+                            <h2 class="text-center hide-until-pro">PACKAGES</h2>
+                            <li><a href="#consultation"><span>package 1 <hr></span>consultation</a></li>
+                            <li><a href="#consultation-w-design"><span>package 2 <hr></span>consultation with design</a></li>
+                            <li><a href="#concept-and-sketch"><span>package 3 <hr></span>concept + sketch design</a></li>
+                            <li><a href="#renovation-plan"><span>package 4 <hr></span>renovation plan | interior design</a></li>
+                            <li><a href="#bespoke"><span>package 5 <hr></span>bespoke building design</a></li>
+                            <li><a href="#management"><span>package 6 <hr></span>project management</a></li>
+                        </ul>
+                    </div>
+                </div><!--col-->
+
+                <!-- body content -->
+                <div class="col-xs-12 col-lg-9 order-lg-1 p-3 body-content">
+                    <div class="row">
+                        <!-- package one -->
+                        <div id="consultation" class="col-12">
+                            <div class="p-4 my-4 text-box text-center">
+                                <div class="number mx-auto">#1</div>
+                                <span>package 1</span>
+                                <h2>consultation</h2>
+                                <p>
+                                    This is the first step for all of our packages, the starting point of your design project, we usually start off with an email and phone call briefing before moving on to a face to face meeting.
+                                </p>
+                                <!-- options + outcomes -->
+                                <div class="row py-5">
+                                    <div class="infographic mx-auto text-center">
+                                        <div class="icon"><i class="fas fa-hourglass-start"></i></div>
+                                        <div class="navy"></div>
+                                        <div class="icon"><i class="fas fa-dollar-sign"></i></div>
+                                        <div class="navy"></div>
+                                        <div class="icon"><i class="far fa-clock"></i></div>
+                                        <div class="text">1<br>hour</div>
+                                        <div class="navy"></div>
+                                        <div class="text">from &#36;300</div>
+                                        <div class="navy"></div>
+                                        <div class="text">1-2 weeks</div>
+                                    </div>
+                                </div>
+
+                                <p>
+                                    A face-to-face meeting in your home (or on a video platform) that usually lasts about an hour and allows us to have an in-depth conversation about your project requirements. We’ll discuss ideas that you may already have so that we can get a better sense of your personal style, specific requirements and project time frames. 
+                                </p>
+                                <p>
+                                    We’ll take some photos and measurements of the spaces that require work, ultimately, we’ll use this time to gather all of the information required to move forward into the concept phase of your project.
+                                </p>
+                                <p>
+                                    You’ll receive a detailed summary of the design meeting as well as a brief for the next steps going forward.
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <!-- package two -->
+                        <div id="consultation-w-design" class="col-12">
+                            <div class="p-4 my-4 text-box text-center">
+                                <div class="number mx-auto">#2</div>
+                                <span>package 2</span>
+                                <h2>consultation with design</h2>
+                                <p>
+                                    Perfect for those of you who are pretty comfortable doing almost everything yourself, this session is aimed at giving you design advice on the below outcomes
+                                </p>
+                                <!-- options + outcomes -->
+                                <div class="row py-5">
+                                    <div class="infographic mx-auto text-center">
+                                        <div class="icon"><i class="fas fa-hourglass-start"></i></div>
+                                        <div class="navy"></div>
+                                        <div class="icon"><i class="fas fa-dollar-sign"></i></div>
+                                        <div class="navy"></div>
+                                        <div class="icon"><i class="far fa-clock"></i></div>
+                                        <div class="text">2<br>hours</div>
+                                        <div class="navy"></div>
+                                        <div class="text">from &#36;800</div>
+                                        <div class="navy"></div>
+                                        <div class="text">1-2 weeks</div>
+                                    </div>
+                                </div>
+
+                                <p>
+                                    Everything included in Package 01 as well as the following (based on your requirements, not all of these may be applicable): 
+                                </p>
+                                <ul class="list-inline">
+                                    <li>Floor plan review</li>
+                                    <li>Furniture Plans</li>
+                                    <li>Moodboards for desired look</li>
+                                    <li>Finishes checklist</li>
+                                    <li>Furniture, Fixtures and Equipment (FF+E) checklist</li>
+                                    <li>Recommended tradies and suppliers</li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <!-- package three -->
+                        <div id="concept-and-sketch" class="col-12">
+                            <div class="p-4 my-4 text-box text-center">
+                                <div class="number mx-auto">#3</div>
+                                <span>package 3</span>
+                                <h2>concept + sketch design</h2>
+                                <p>
+                                    Ideal for those of you that are perfectly capable with sourcing materials and running a reno project, but need some assistance in the design department.
+                                </p>
+                                <!-- options + outcomes -->
+                                <div class="row py-5">
+                                    <div class="infographic mx-auto text-center">
+                                        <div class="icon"><i class="fas fa-hourglass-start"></i></div>
+                                        <div class="navy"></div>
+                                        <div class="icon"><i class="fas fa-dollar-sign"></i></div>
+                                        <div class="navy"></div>
+                                        <div class="icon"><i class="far fa-clock"></i></div>
+                                        <div class="text">1-2<br>hours</div>
+                                        <div class="navy"></div>
+                                        <div class="text">from &#36;1200</div>
+                                        <div class="navy"></div>
+                                        <div class="text">2-3 weeks</div>
+                                    </div>
+                                </div>
+                                <p>
+                                    Click the icon below to download a sample of what this package looks like. Tailored to your brief and needs, as discussed in our initial consultation (Package 01), we provide a document like this including sketch layouts (to scale) and moodboards per space as well as
+                                </p>
+                                <ul class="list-inline">
+                                    <li>Finishes checklist</li>
+                                    <li>Furniture, Fixtures and Equipment (FF+E) checklist</li>
+                                    <li>Recommended traders and suppliers</li>
+                                </ul>
+                                <div class="download mx-auto">
+                                    <a href="https://jumpshare.com/v/09PZehGEE26iAxF0yXi1#" target="_blank"><i class="fas fa-download"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- package four -->
+                        <div id="renovation-plan" class="col-12">
+                            <div class="p-4 my-4 text-box text-center">
+                                <div class="number mx-auto">#4</div>
+                                <span>package 4</span>
+                                <h2>renovation plan | interior design</h2>
+                                <p>
+                                    Everything you need to complete your home renovation or interior makeover, from the sketch design to the scatter cushions. For major renovations, see Package 05.
+                                </p>
+                                <!-- options + outcomes -->
+                                <div class="row py-5">
+                                    <div class="infographic mx-auto text-center">
+                                        <div class="icon"><i class="fas fa-hourglass-start"></i></div>
+                                        <div class="navy"></div>
+                                        <div class="icon"><i class="fas fa-dollar-sign"></i></div>
+                                        <div class="navy"></div>
+                                        <div class="icon"><i class="far fa-clock"></i></div>
+                                        <div class="text">2<br>hours</div>
+                                        <div class="navy"></div>
+                                        <div class="text">from &#36;2000</div>
+                                        <div class="navy"></div>
+                                        <div class="text">4-6 weeks</div>
+                                    </div>
+                                </div>
+
+                                <p>
+                                    Package 01 + Package 03 + your renovation “shopping list” (download an example below) 
+                                </p>
+                                <p>
+                                    Put simply, this is your tailored renovation/interior design “shopping list” together with concise instructions on how to complete your home makeover. It’s a step-by-step PDF guide, complete with floor plans, materials and finishes, together with their pricing and the quantity required, all within your budget. I will also outline the trades needed to complete the job with some of my recommendations.
+                                </p>
+                                <div class="download mx-auto">
+                                    <a href="https://jumpshare.com/v/8JrZjtmW03UTmgzV72eJ"><i class="fas fa-download" target="_blank"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--row-->
+                </div><!--col-->
+            </div><!--row-->
+        </div>
+    </section>
+        
+
+    <!-- sign up -->
+    <section id="sign-up" data-aos="fade-up" data-aos-easing="ease-in-sine">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-xs-12 col-lg-6 offset-lg-3 text-center text-white py-5">
+                    <h1 class="no-bg">Get the free work from home guide</h1>
+                    <br>
+                    <p class="text-center">
+                        Send us an email and we will send you a free copy of our much coveted work from home guide! 
+                    </p>
+                    <p class="text-center">
+                        We promise that your email will not be published or shared anywhere
+                    </p>
+                    <br>
+                    <button class="btn btn-lg btn-warning" data-toggle="modal" data-target="#myModal">subscribe to our newsletter</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="menu-icons">
+                        <ul>
+                            <li><a href="https://www.facebook.com/thetwohomers" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.instagram.com/the_two_homers/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/the-two-homers" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="https://za.pinterest.com/thetwohomers/" target="blank"><i class="fab fa-pinterest-p"></i></a></li>
+                            <li>|</li>
+                            <li><a href="mailto:jess@thetwohomers.com" target="_blank"><i class="far fa-envelope"></i></a></li>
+                            <li><a href="tel:+61414562424"><i class="fas fa-phone"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid footer-bottom">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center">&copy; Copyright 2020, <a href="lauraannseal.com">Laura Ann Seal</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 id="myModalLable"><i class="fa fa-envelope"></i> Subscribe to our mailing list</h4>
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">close</span></button>
+                </div><!--modal header-->
+                <div class="modal-body">
+                    <p>
+                        Subscribe now to get our digital Work From Home guide sent straight to your inbox, you'll also be first in line to receive any news, promotions, and freebies from us in the future!
+                    </p>
+
+                    <form role="form" class="text-center">
+                        <div class="form-group">
+                            <label for="subscribe-name" class="sr-only">Your first Name</label>
+                            <input type="text" class="form-control" id="subscribe-name" placeholder="Your first name">
+                        </div><!--form group-->
+                        <div class="form-group">
+                            <label for="subscribe-email" class="sr-only">Your email</label>
+                            <input type="text" class="form-control" id="subscribe-email" placeholder="Your email">
+                        </div><!--form group-->
+                        <input type="submit" class="btn btn-danger" value="subscribe">
+                    </form>
+                    <hr>
+                    <p><small>No spam, ever. Your email will only ever be used for The Two Homers' newletter.</small></p>
+                </div><!--modal body-->
+            </div><!--modal content-->
+        </div><!--modal dialog-->
+
+    </div><!--modal-->
+
+
+    <!-- bootstrap core javascript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!--animate on scroll-->
+    <script src='https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js'></script>
+
+    <!-- custom scripts -->
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/letter-t.js"></script>
+    <script src="scripts/aos.js"></script>
+    <script src="scripts/hiddenNav.js"></script>
+</body>
+</html>

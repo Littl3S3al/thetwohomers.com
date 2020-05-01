@@ -75,6 +75,10 @@ h5{
     font-size: 3em;
     overflow: visible;
 }
+h5 span{
+    margin-left: 0.2em;
+    margin-right: -0.2em;
+}
 p{
     text-align: justify;
 }
@@ -107,6 +111,18 @@ button.btn-dark{
     border:#cea075; 
 }
 .btn-warning:hover, .btn-warning:focus, .btn-warning:active{
+    background: #e89856;
+    border: #e89856;
+}
+.btn-secondary{
+    border-radius: 0;
+    background: #cea075;
+    font-weight: 300;
+    font-size: 1em!important;
+    border:#cea075;
+    transform: translateY(-0.5em);
+}
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active{
     background: #e89856;
     border: #e89856;
 }
@@ -176,7 +192,7 @@ input[type="submit"], button[type="submit"]{
 .mobile .nav-menu .menu-icons, .mobile .nav-menu .menu-button {
     position: fixed!important;
     top: 0!important;
-    height: 50px;
+    height: 55px;
     overflow: hidden;
 }
 .mobile .nav-menu .menu-button {
@@ -189,10 +205,16 @@ input[type="submit"], button[type="submit"]{
 }
 .mobile .nav-menu .menu-icons {
     background: #841621;
-    width: 70vw;
+    width: 100vw;
     background: #333333;
     right: 0;
     z-index: 9;
+}
+.mobile .nav-menu .menu-icons ul li a i.fa-phone{
+    background: #cea075;
+    padding: 10px;
+    border-radius: 1em;
+    margin-top: -10px;
 }
 .menu-button-text{
     margin: 15px

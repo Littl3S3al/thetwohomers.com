@@ -24,3 +24,5 @@ navbtn.addEventListener('click', () => {
 remainder.addEventListener('click', () => {
     openMenu();
 });
+
+

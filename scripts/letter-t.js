@@ -1,6 +1,7 @@
 // t char code is 116
 
 const h1 = document.querySelectorAll('h1');
+const h5 = document.querySelectorAll('h5');
 
 const fix = (text) => {
     let updated = '';
@@ -19,5 +20,11 @@ const fix = (text) => {
 h1.forEach( heading => {
     heading.innerHTML = fix(heading.innerText)
 })
+
+if(h5){
+    h5.forEach( heading => {
+        heading.innerHTML = fix(heading.innerText);
+    })
+}
 
 
